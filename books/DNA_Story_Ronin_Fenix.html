@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA Story Ronin Fenix</title>
+    <style>
+        /* Print-optimized styles */
+        @page {
+            size: letter;
+            margin: 1in;
+        }
+
+        @media print {
+            body { font-size: 11pt; }
+            h1 { page-break-before: always; }
+            h1:first-of-type { page-break-before: avoid; }
+            h2 { page-break-before: always; }
+            h2:first-of-type { page-break-before: avoid; }
+            table { page-break-inside: avoid; }
+            .no-break { page-break-inside: avoid; }
+        }
+
+        /* Base styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            line-height: 1.7;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 40px;
+            color: #333;
+            background: #fff;
+        }
+
+        /* Headings */
+        h1 {
+            color: #1a1a1a;
+            font-size: 2.2em;
+            border-bottom: 3px solid #333;
+            padding-bottom: 12px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+
+        h1:first-of-type {
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.6em;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: #555;
+            font-size: 1.1em;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        /* Paragraphs */
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        /* Blockquotes */
+        blockquote {
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            margin: 25px 0;
+            background: #f9f9f9;
+            font-style: italic;
+            color: #555;
+        }
+
+        blockquote p {
+            margin: 0;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 15px 0;
+            padding-left: 35px;
+        }
+
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        /* Tables */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 25px 0;
+            font-size: 0.9em;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #f5f5f5;
+            font-weight: bold;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background: #fafafa;
+        }
+
+        /* Horizontal rules */
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 40px 0;
+        }
+
+        /* Strong and emphasis */
+        strong {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        em {
+            color: #555;
+        }
+
+        /* Code */
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        pre code {
+            padding: 0;
+            background: none;
+        }
+
+        /* Links */
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Table of contents */
+        .toc {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        /* Title page styling */
+        h1:first-of-type {
+            font-size: 2.8em;
+            text-align: center;
+            border-bottom: none;
+            margin-bottom: 10px;
+        }
+
+        h1:first-of-type + h2 {
+            text-align: center;
+            border-bottom: none;
+            color: #666;
+            font-weight: normal;
+            page-break-before: avoid;
+        }
+
+        /* Print button - hide in print */
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .print-button:hover {
+            background: #2980b9;
+        }
+
+        @media print {
+            .print-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">Print / Save as PDF</button>
+    <h1 id="the-dna-story-of-ronin-fenix">The DNA Story of Ronin Fenix</h1>
+<h2 id="a-comprehensive-genetic-personality-analysis">A Comprehensive Genetic Personality Analysis</h2>
+<p><em>Generated: 2026-02-26</em></p>
+<hr />
+<h2 id="preface">Preface</h2>
+<blockquote>
+<p><em>"In the twisted ladder of DNA, we find not our destiny, but our tendencies—
+the whispered suggestions of a billion years of evolution, waiting to be
+heard or overwritten by the choices we make."</em></p>
+</blockquote>
+<p>This book represents a comprehensive analysis of the genetic variants that influence
+personality, cognition, and behavior. The analysis is based on peer-reviewed scientific
+research examining Single Nucleotide Polymorphisms (SNPs) associated with psychological traits.</p>
+<p><strong>Important Considerations:</strong></p>
+<ol>
+<li>
+<p><strong>Genetics is not destiny.</strong> Environmental factors, life experiences, and personal choices
+   profoundly shape who we become. Genes create tendencies, not certainties.</p>
+</li>
+<li>
+<p><strong>Complex traits are polygenic.</strong> Personality emerges from thousands of genetic variants,
+   each contributing a small effect. No single gene determines any personality trait.</p>
+</li>
+<li>
+<p><strong>Gene-environment interaction is crucial.</strong> The same genetic variant may have different
+   effects depending on life circumstances—this is known as differential susceptibility.</p>
+</li>
+<li>
+<p><strong>Scientific understanding continues to evolve.</strong> New research regularly refines our
+   understanding of genetic influences on behavior.</p>
+</li>
+</ol>
+<p>This analysis examined 38 personality-related genetic variants from the
+genome data file, with 16 variants not available in the data.</p>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#executive-summary">Executive Summary</a></li>
+<li><a href="#personality-profile-overview">Personality Profile Overview</a></li>
+<li><a href="#serotonin-system">Serotonin System</a></li>
+<li><a href="#dopamine-system">Dopamine System</a></li>
+<li><a href="#oxytocin-system">Oxytocin System</a></li>
+<li><a href="#neuroplasticity">Neuroplasticity</a></li>
+<li><a href="#gaba-system">GABA System</a></li>
+<li><a href="#circadian">Circadian</a></li>
+<li><a href="#stress-response">Stress Response</a></li>
+<li><a href="#cognition">Cognition</a></li>
+<li><a href="#impulsivity">Impulsivity</a></li>
+<li><a href="#social-cognition">Social Cognition</a></li>
+<li><a href="#addiction">Addiction</a></li>
+<li><a href="#creativity">Creativity</a></li>
+<li><a href="#conscientiousness">Conscientiousness</a></li>
+<li><a href="#neuroticism">Neuroticism</a></li>
+<li><a href="#resilience">Resilience</a></li>
+<li><a href="#pain">Pain</a></li>
+<li><a href="#longevity">Longevity</a></li>
+<li><a href="#gene-interactions--emergent-traits">Gene Interactions &amp; Emergent Traits</a></li>
+<li><a href="#complete-variant-reference">Complete Variant Reference</a></li>
+<li><a href="#scientific-references">Scientific References</a></li>
+</ol>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<h3 id="ronin-fenixs-genetic-personality-signature">Ronin Fenix's Genetic Personality Signature</h3>
+<p>Based on analysis of personality-associated genetic variants, the following
+tendencies emerge from your DNA:</p>
+<p><strong>Emotional Sensitivity:</strong> High
+<strong>Stress Resilience:</strong> High
+<strong>Social Orientation:</strong> High
+<strong>Cognitive Style:</strong> Action-Oriented/Intuitive
+<strong>Reward Sensitivity:</strong> Normal</p>
+<h3 id="key-genetic-findings">Key Genetic Findings</h3>
+<p><strong>COMT (rs4680):</strong> GG
+- Val/Val - High COMT activity (Warrior)</p>
+<p><strong>OXTR (rs53576):</strong> GG
+- Higher receptor expression</p>
+<p><strong>BDNF (rs6265):</strong> CC
+- Novel/Rare genotype: CC</p>
+<p><strong>DRD2/ANKK1 (rs1800497):</strong> GG
+- Novel/Rare genotype: GG</p>
+<hr />
+<h2 id="personality-profile-overview">Personality Profile Overview</h2>
+<h3 id="the-genetic-foundation-of-personality">The Genetic Foundation of Personality</h3>
+<p>Your personality emerges from the interplay of genetic predispositions and life experiences.
+The genetic variants analyzed here influence neurotransmitter systems that shape how you:</p>
+<ul>
+<li>Process emotions and respond to stress</li>
+<li>Seek rewards and maintain motivation</li>
+<li>Form social bonds and experience empathy</li>
+<li>Learn, remember, and adapt to new situations</li>
+<li>Regulate impulses and make decisions</li>
+</ul>
+<p>The following chapters examine each neurotransmitter system and trait category in detail,
+explaining what your specific variants mean for your psychological tendencies.</p>
+<h3 id="integrated-personality-narrative">Integrated Personality Narrative</h3>
+<p>Your COMT Val/Val genotype indicates a 'Warrior' cognitive style—you likely perform well under pressure and in high-stakes situations. Your efficient dopamine clearance helps maintain cognitive stability during stress, though you may need to work harder on tasks requiring sustained, low-arousal concentration.</p>
+<p>Your oxytocin receptor genotype suggests strong social orientation. You likely experience empathy deeply, find social connection rewarding, and are attuned to others' emotional states. Social support may be particularly important for your wellbeing, and you may find isolation more challenging than others.</p>
+<hr />
+<h2 id="serotonin-system">Serotonin System</h2>
+<p><em>Mood regulation, emotional processing, and anxiety</em></p>
+<p>The serotonin system is often called the "mood neurotransmitter" system, though its functions extend far
+beyond simple happiness. Serotonin regulates emotional responses, anxiety, sleep, appetite, and social
+behavior. The genes in this system affect how serotonin is produced, how long it remains active in
+synapses, and how sensitive your neurons are to its signals.</p>
+<p>Your serotonin system genetics shape your baseline emotional tone, your sensitivity to stress, and
+how you process both positive and negative experiences. These variants interact with life experiences
+in powerful ways—the same genetic profile that creates vulnerability to depression in harsh environments
+may create exceptional emotional depth and creativity in supportive ones.</p>
+<h3 id="your-variants-in-this-category">Your Variants in This Category</h3>
+<h4 id="htr1a-serotonin-receptor-1a">HTR1A — Serotonin Receptor 1A</h4>
+<p><strong>SNP ID:</strong> rs6295
+<strong>Location:</strong> Chromosome 5, Position 63258565
+<strong>Your Genotype:</strong> CC</p>
+<p><strong>Function:</strong> Primary inhibitory serotonin receptor affecting mood and anxiety</p>
+<p><strong>Your Variant Effect:</strong> Reduced receptor expression</p>
+<p><strong>Trait Implications:</strong>
+Increased susceptibility to anxiety and depression. More intense negative emotional responses. Higher baseline arousal states.</p>
+<p><strong>Scientific Detail:</strong>
+Lower 5-HT1A receptor density in limbic regions leads to reduced inhibitory control over stress responses.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- HTR2A (rs6311): Your CT genotype</p>
+<p><strong>Key References:</strong> Lemonde et al. 2003 J Neurosci, Strobel et al. 2003 Mol Psychiatry</p>
+<hr />
+<h4 id="htr2a-serotonin-receptor-2a">HTR2A — Serotonin Receptor 2A</h4>
+<p><strong>SNP ID:</strong> rs6311
+<strong>Location:</strong> Chromosome 13, Position 47471478
+<strong>Your Genotype:</strong> CT</p>
+<p><strong>Function:</strong> Major excitatory serotonin receptor involved in cognition and perception</p>
+<p><strong>Your Variant Effect:</strong> Novel/Rare genotype: CT</p>
+<p><strong>Trait Implications:</strong>
+This genotype is not well characterized in the literature.</p>
+<p><strong>Scientific Detail:</strong>
+The observed genotype differs from common variants. This may represent a rare variant or population-specific polymorphism.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- HTR1A (rs6295): Your CC genotype</p>
+<p><strong>Key References:</strong> Polesskaya &amp; Bhardwaj 2005, Turecki et al. 1999</p>
+<hr />
+<h4 id="tph1-tryptophan-hydroxylase-1">TPH1 — Tryptophan Hydroxylase 1</h4>
+<p><strong>SNP ID:</strong> rs1800532
+<strong>Location:</strong> Chromosome 11, Position 18047816
+<strong>Your Genotype:</strong> GT</p>
+<p><strong>Function:</strong> Rate-limiting enzyme in peripheral serotonin synthesis</p>
+<p><strong>Your Variant Effect:</strong> Novel/Rare genotype: GT</p>
+<p><strong>Trait Implications:</strong>
+This genotype is not well characterized in the literature.</p>
+<p><strong>Scientific Detail:</strong>
+The observed genotype differs from common variants. This may represent a rare variant or population-specific polymorphism.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- TPH2 (rs4570625): Your GG genotype</p>
+<p><strong>Key References:</strong> Nielsen et al. 1994, Rujescu et al. 2003</p>
+<hr />
+<h4 id="tph2-tryptophan-hydroxylase-2">TPH2 — Tryptophan Hydroxylase 2</h4>
+<p><strong>SNP ID:</strong> rs4570625
+<strong>Location:</strong> Chromosome 12, Position 72331923
+<strong>Your Genotype:</strong> GG</p>
+<p><strong>Function:</strong> Brain-specific serotonin synthesis enzyme</p>
+<p><strong>Your Variant Effect:</strong> Standard brain serotonin synthesis</p>
+<p><strong>Trait Implications:</strong>
+Normal emotional regulation capacity, typical stress responses.</p>
+<p><strong>Scientific Detail:</strong>
+Normal TPH2 activity supporting adequate central serotonin production.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- TPH1 (rs1800532): Your GT genotype</p>
+<p><strong>Key References:</strong> Zhang et al. 2005 Neuron, Chen et al. 2008</p>
+<hr />
+<h2 id="dopamine-system">Dopamine System</h2>
+<p><em>Reward, motivation, attention, and executive function</em></p>
+<p>The dopamine system drives motivation, reward-seeking, and executive function. It's the neurochemical
+foundation of wanting, striving, and the pleasure of achievement. These genes determine how much
+dopamine is available in your brain, how sensitive your neurons are to it, and how quickly it's
+cleared from synapses.</p>
+<p>Your dopamine genetics influence whether you're more of a "thinker" or "doer," how intensely you
+experience rewards, and your vulnerability to addictive patterns. The prefrontal dopamine balance
+particularly affects your cognitive style—whether you're more analytical or action-oriented.</p>
+<h3 id="your-variants-in-this-category_1">Your Variants in This Category</h3>
+<h4 id="comt-catechol-o-methyltransferase-val158met">COMT — Catechol-O-Methyltransferase Val158Met</h4>
+<p><strong>SNP ID:</strong> rs4680
+<strong>Location:</strong> Chromosome 22, Position 19951271
+<strong>Your Genotype:</strong> GG</p>
+<p><strong>Function:</strong> Primary enzyme for dopamine degradation in prefrontal cortex</p>
+<p><strong>Your Variant Effect:</strong> Val/Val - High COMT activity (Warrior)</p>
+<p><strong>Trait Implications:</strong>
+Lower prefrontal dopamine. Better performance under stress and pressure, improved emotional resilience, but may have lower baseline cognitive task performance. Action-oriented, less prone to overthinking.</p>
+<p><strong>Scientific Detail:</strong>
+The Val allele produces highly active enzyme, rapidly clearing dopamine. This 'Warrior' genotype excels under pressure but may show reduced sustained attention and working memory at baseline.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- DRD3 (rs6280): Your CC genotype
+- DRD2/ANKK1 (rs1800497): Your GG genotype
+- COMT (rs4633): Your CC genotype</p>
+<p><strong>Key References:</strong> Egan et al. 2001 PNAS, Chen et al. 2004 Am J Hum Genet</p>
+<hr />
+<h4 id="drd2ankk1-taq1a-dopamine-receptor">DRD2/ANKK1 — Taq1A Dopamine Receptor</h4>
+<p><strong>SNP ID:</strong> rs1800497
+<strong>Location:</strong> Chromosome 11, Position 113270828
+<strong>Your Genotype:</strong> GG</p>
+<p><strong>Function:</strong> Affects D2 dopamine receptor density in striatum</p>
+<p><strong>Your Variant Effect:</strong> Novel/Rare genotype: GG</p>
+<p><strong>Trait Implications:</strong>
+This genotype is not well characterized in the literature.</p>
+<p><strong>Scientific Detail:</strong>
+The observed genotype differs from common variants. This may represent a rare variant or population-specific polymorphism.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- COMT (rs4680): Your GG genotype
+- DRD3 (rs6280): Your CC genotype
+- DRD2 (rs1079597): Your CC genotype</p>
+<p><strong>Key References:</strong> Blum et al. 1990, Noble et al. 1991 Arch Gen Psychiatry</p>
+<hr />
+<h4 id="drd3-dopamine-receptor-d3-ser9gly">DRD3 — Dopamine Receptor D3 Ser9Gly</h4>
+<p><strong>SNP ID:</strong> rs6280
+<strong>Location:</strong> Chromosome 3, Position 113890815
+<strong>Your Genotype:</strong> CC</p>
+<p><strong>Function:</strong> D3 receptor involved in reward and emotional processing</p>
+<p><strong>Your Variant Effect:</strong> Ser/Ser - Standard receptor function</p>
+<p><strong>Trait Implications:</strong>
+Normal reward processing, typical emotional responses to rewards and punishments.</p>
+<p><strong>Scientific Detail:</strong>
+Standard D3 receptor binding affinity supports normal mesolimbic dopamine signaling.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- DRD2/ANKK1 (rs1800497): Your GG genotype
+- COMT (rs4680): Your GG genotype</p>
+<p><strong>Key References:</strong> Lundstrom &amp; Bhardwaj 2001, Joyce et al. 2009</p>
+<hr />
+<h4 id="drd2-drd2-taqib">DRD2 — DRD2 TaqIB</h4>
+<p><strong>SNP ID:</strong> rs1079597
+<strong>Location:</strong> Chromosome 11, Position 113296286
+<strong>Your Genotype:</strong> CC</p>
+<p><strong>Function:</strong> Additional D2 receptor density modifier</p>
+<p><strong>Your Variant Effect:</strong> B1/B1 - Reduced D2 density</p>
+<p><strong>Trait Implications:</strong>
+Similar to A1 at rs1800497, associated with novelty seeking and reward sensitivity.</p>
+<p><strong>Scientific Detail:</strong>
+Reduced receptor expression contributes to reward-seeking behavior patterns.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- DRD2/ANKK1 (rs1800497): Your GG genotype</p>
+<p><strong>Key References:</strong> Noble et al. 1994</p>
+<hr />
+<h4 id="dbh-dopamine-beta-hydroxylase">DBH — Dopamine Beta-Hydroxylase</h4>
+<p><strong>SNP ID:</strong> rs1611115
+<strong>Location:</strong> Chromosome 9, Position 136500515
+<strong>Your Genotype:</strong> CT</p>
+<p><strong>Function:</strong> Converts dopamine to norepinephrine</p>
+<p><strong>Your Variant Effect:</strong> Intermediate activity</p>
+<p><strong>Trait Implications:</strong>
+Moderate catecholamine balance.</p>
+<p><strong>Scientific Detail:</strong>
+Heterozygous state provides intermediate conversion efficiency.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- COMT (rs4680): Your GG genotype</p>
+<p><strong>Key References:</strong> Zabetian et al. 2001</p>
+<hr />
+<h4 id="drd2-drd2-intronic-variant">DRD2 — DRD2 Intronic Variant</h4>
+<p><strong>SNP ID:</strong> rs2283265
+<strong>Location:</strong> Chromosome 11, Position 113285536
+<strong>Your Genotype:</strong> CC</p>
+<p><strong>Function:</strong> Affects D2 receptor alternative splicing</p>
+<p><strong>Your Variant Effect:</strong> Novel/Rare genotype: CC</p>
+<p><strong>Trait Implications:</strong>
+This genotype is not well characterized in the literature.</p>
+<p><strong>Scientific Detail:</strong>
+The observed genotype differs from common variants. This may represent a rare variant or population-specific polymorphism.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- DRD2/ANKK1 (rs1800497): Your GG genotype</p>
+<p><strong>Key References:</strong> Zhang et al. 2007</p>
+<hr />
+<h2 id="oxytocin-system">Oxytocin System</h2>
+<p><em>Social bonding, empathy, and trust</em></p>
+<p>The oxytocin system is the biological foundation of social bonding, trust, and empathy. These genes
+determine how much oxytocin is released during social interactions and how sensitive your brain is
+to its effects.</p>
+<p>Your oxytocin genetics shape how you approach relationships, how deeply you experience empathy,
+and how much social connection you need for wellbeing. Some people are genetically wired to thrive
+on social closeness, while others function well with more independence.</p>
+<h3 id="your-variants-in-this-category_2">Your Variants in This Category</h3>
+<h4 id="oxtr-oxytocin-receptor">OXTR — Oxytocin Receptor</h4>
+<p><strong>SNP ID:</strong> rs53576
+<strong>Location:</strong> Chromosome 3, Position 8804371
+<strong>Your Genotype:</strong> GG</p>
+<p><strong>Function:</strong> Primary receptor for oxytocin social bonding hormone</p>
+<p><strong>Your Variant Effect:</strong> Higher receptor expression</p>
+<p><strong>Trait Implications:</strong>
+Enhanced empathy, strong social orientation, higher sensitivity to social support and rejection, more attuned to others' emotions, tendency toward prosocial behavior.</p>
+<p><strong>Scientific Detail:</strong>
+Increased OXTR expression amplifies oxytocin signaling, enhancing social reward sensitivity, empathy, and the importance of social connections.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- OXTR (rs2254298): Your GG genotype</p>
+<p><strong>Key References:</strong> Rodrigues et al. 2009 PNAS, Tost et al. 2010 PNAS</p>
+<hr />
+<h4 id="oxtr-oxytocin-receptor-variant-2">OXTR — Oxytocin Receptor Variant 2</h4>
+<p><strong>SNP ID:</strong> rs2254298
+<strong>Location:</strong> Chromosome 3, Position 8802228
+<strong>Your Genotype:</strong> GG</p>
+<p><strong>Function:</strong> Additional OXTR polymorphism affecting expression</p>
+<p><strong>Your Variant Effect:</strong> Standard expression</p>
+<p><strong>Trait Implications:</strong>
+Typical social bonding capacity, normal empathy levels.</p>
+<p><strong>Scientific Detail:</strong>
+Normal OXTR expression at this locus supports standard oxytocin signaling.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- OXTR (rs53576): Your GG genotype</p>
+<p><strong>Key References:</strong> Wu et al. 2012</p>
+<hr />
+<h2 id="neuroplasticity">Neuroplasticity</h2>
+<p><em>Learning, memory, and adaptation</em></p>
+<p>Brain-Derived Neurotrophic Factor (BDNF) is crucial for neuron survival, growth, and adaptation.
+It's the molecular basis of neuroplasticity—your brain's ability to change in response to experience.</p>
+<p>Your BDNF genetics affect how readily you learn new things, how well you remember experiences,
+and how easily you can unlearn outdated patterns. High BDNF function supports cognitive flexibility,
+while lower function may favor stability and consistency.</p>
+<h3 id="your-variants-in-this-category_3">Your Variants in This Category</h3>
+<h4 id="bdnf-brain-derived-neurotrophic-factor-val66met">BDNF — Brain-Derived Neurotrophic Factor Val66Met</h4>
+<p><strong>SNP ID:</strong> rs6265
+<strong>Location:</strong> Chromosome 11, Position 27679916
+<strong>Your Genotype:</strong> CC</p>
+<p><strong>Function:</strong> Critical growth factor for neuron survival and plasticity</p>
+<p><strong>Your Variant Effect:</strong> Novel/Rare genotype: CC</p>
+<p><strong>Trait Implications:</strong>
+This genotype is not well characterized in the literature.</p>
+<p><strong>Scientific Detail:</strong>
+The observed genotype differs from common variants. This may represent a rare variant or population-specific polymorphism.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- COMT (rs4680): Your GG genotype</p>
+<p><strong>Key References:</strong> Egan et al. 2003 Cell, Hariri et al. 2003 J Neurosci</p>
+<hr />
+<h4 id="bdnf-bdnf-regulatory-variant">BDNF — BDNF Regulatory Variant</h4>
+<p><strong>SNP ID:</strong> rs7124442
+<strong>Location:</strong> Chromosome 11, Position 27677041
+<strong>Your Genotype:</strong> CT</p>
+<p><strong>Function:</strong> Affects BDNF transcription</p>
+<p><strong>Your Variant Effect:</strong> Intermediate</p>
+<p><strong>Trait Implications:</strong>
+Slightly modified BDNF levels.</p>
+<p><strong>Scientific Detail:</strong>
+Heterozygous effect on transcriptional regulation.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- BDNF (rs6265): Your CC genotype</p>
+<p><strong>Key References:</strong> Verhagen et al. 2010</p>
+<hr />
+<h4 id="bdnf-bdnf-intronic-variant">BDNF — BDNF Intronic Variant</h4>
+<p><strong>SNP ID:</strong> rs11030104
+<strong>Location:</strong> Chromosome 11, Position 27684517
+<strong>Your Genotype:</strong> AA</p>
+<p><strong>Function:</strong> Additional BDNF expression modifier</p>
+<p><strong>Your Variant Effect:</strong> One variant state</p>
+<p><strong>Trait Implications:</strong>
+Modified BDNF expression patterns.</p>
+<p><strong>Scientific Detail:</strong>
+This intronic variant can influence overall BDNF levels.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- BDNF (rs6265): Your CC genotype
+- BDNF (rs7124442): Your CT genotype</p>
+<p><strong>Key References:</strong> Verhagen et al. 2010</p>
+<hr />
+<h2 id="gaba-system">GABA System</h2>
+<p><em>Inhibition, calmness, and anxiety regulation</em></p>
+<h3 id="your-variants-in-this-category_4">Your Variants in This Category</h3>
+<h4 id="gabra2-gaba-a-receptor-alpha-2-variant-2">GABRA2 — GABA-A Receptor Alpha-2 Variant 2</h4>
+<p><strong>SNP ID:</strong> rs279858
+<strong>Location:</strong> Chromosome 4, Position 46314593
+<strong>Your Genotype:</strong> CT</p>
+<p><strong>Function:</strong> Additional GABRA2 polymorphism</p>
+<p><strong>Your Variant Effect:</strong> Novel/Rare genotype: CT</p>
+<p><strong>Trait Implications:</strong>
+This genotype is not well characterized in the literature.</p>
+<p><strong>Scientific Detail:</strong>
+The observed genotype differs from common variants. This may represent a rare variant or population-specific polymorphism.</p>
+<p><strong>Key References:</strong> Covault et al. 2004</p>
+<hr />
+<h2 id="circadian">Circadian</h2>
+<p><em>Sleep patterns and daily energy rhythms</em></p>
+<h3 id="your-variants-in-this-category_5">Your Variants in This Category</h3>
+<h4 id="clock-circadian-locomotor-output-cycles-kaput">CLOCK — Circadian Locomotor Output Cycles Kaput</h4>
+<p><strong>SNP ID:</strong> rs1801260
+<strong>Location:</strong> Chromosome 4, Position 56301369
+<strong>Your Genotype:</strong> AG</p>
+<p><strong>Function:</strong> Master circadian transcription factor</p>
+<p><strong>Your Variant Effect:</strong> Intermediate</p>
+<p><strong>Trait Implications:</strong>
+Slightly modified circadian characteristics.</p>
+<p><strong>Scientific Detail:</strong>
+Heterozygous effect on circadian gene expression.</p>
+<p><strong>Key References:</strong> Katzenberg et al. 1998</p>
+<hr />
+<h4 id="clock-clock-intronic-variant">CLOCK — CLOCK Intronic Variant</h4>
+<p><strong>SNP ID:</strong> rs12649507
+<strong>Location:</strong> Chromosome 4, Position 56380484
+<strong>Your Genotype:</strong> GG</p>
+<p><strong>Function:</strong> Additional circadian modifier</p>
+<p><strong>Your Variant Effect:</strong> Alternative chronotype pattern</p>
+<p><strong>Trait Implications:</strong>
+Different circadian timing preference.</p>
+<p><strong>Scientific Detail:</strong>
+May shift toward morning or evening phenotype.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- CLOCK (rs1801260): Your AG genotype</p>
+<p><strong>Key References:</strong> Jones et al. 2019 Nature Comms</p>
+<hr />
+<h2 id="stress-response">Stress Response</h2>
+<p><em>HPA axis and stress resilience</em></p>
+<p>The HPA (Hypothalamic-Pituitary-Adrenal) axis is your body's stress response system. These genes
+determine how your body reacts to threats and challenges, how high your cortisol rises, and how
+quickly you recover after stress passes.</p>
+<p>Your stress genetics don't just affect how stressed you feel—they shape your entire relationship
+with challenge and adversity. Some people are wired for quick activation and recovery, while others
+have slower, more persistent stress responses.</p>
+<h3 id="your-variants-in-this-category_6">Your Variants in This Category</h3>
+<h4 id="crhr1-corticotropin-releasing-hormone-receptor-1">CRHR1 — Corticotropin Releasing Hormone Receptor 1</h4>
+<p><strong>SNP ID:</strong> rs110402
+<strong>Location:</strong> Chromosome 17, Position 43880047
+<strong>Your Genotype:</strong> GG</p>
+<p><strong>Function:</strong> Primary stress hormone receptor</p>
+<p><strong>Your Variant Effect:</strong> Standard stress response</p>
+<p><strong>Trait Implications:</strong>
+Normal HPA axis reactivity, typical stress sensitivity.</p>
+<p><strong>Scientific Detail:</strong>
+Standard CRHR1 function mediates typical stress responses.</p>
+<p><strong>Key References:</strong> Bradley et al. 2008 Arch Gen Psychiatry</p>
+<hr />
+<h4 id="nr3c2-mineralocorticoid-receptor">NR3C2 — Mineralocorticoid Receptor</h4>
+<p><strong>SNP ID:</strong> rs5522
+<strong>Location:</strong> Chromosome 4, Position 149357475
+<strong>Your Genotype:</strong> TT</p>
+<p><strong>Function:</strong> High-affinity cortisol receptor</p>
+<p><strong>Your Variant Effect:</strong> Novel/Rare genotype: TT</p>
+<p><strong>Trait Implications:</strong>
+This genotype is not well characterized in the literature.</p>
+<p><strong>Scientific Detail:</strong>
+The observed genotype differs from common variants. This may represent a rare variant or population-specific polymorphism.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- CRHR1 (rs110402): Your GG genotype</p>
+<p><strong>Key References:</strong> DeRijk et al. 2006</p>
+<hr />
+<h4 id="fkbp5-fk506-binding-protein-5">FKBP5 — FK506 Binding Protein 5</h4>
+<p><strong>SNP ID:</strong> rs1360780
+<strong>Location:</strong> Chromosome 6, Position 35607571
+<strong>Your Genotype:</strong> CT</p>
+<p><strong>Function:</strong> Regulates glucocorticoid receptor sensitivity</p>
+<p><strong>Your Variant Effect:</strong> Intermediate expression</p>
+<p><strong>Trait Implications:</strong>
+Slightly altered stress response dynamics.</p>
+<p><strong>Scientific Detail:</strong>
+Moderate effect on glucocorticoid receptor cycling.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- CRHR1 (rs110402): Your GG genotype</p>
+<p><strong>Key References:</strong> Binder et al. 2008 JAMA</p>
+<hr />
+<h2 id="cognition">Cognition</h2>
+<p><em>Intelligence and cognitive abilities</em></p>
+<h3 id="your-variants-in-this-category_7">Your Variants in This Category</h3>
+<h4 id="snap25-synaptosomal-associated-protein-25">SNAP25 — Synaptosomal-Associated Protein 25</h4>
+<p><strong>SNP ID:</strong> rs363050
+<strong>Location:</strong> Chromosome 20, Position 10234257
+<strong>Your Genotype:</strong> AG</p>
+<p><strong>Function:</strong> Critical for neurotransmitter release</p>
+<p><strong>Your Variant Effect:</strong> Intermediate</p>
+<p><strong>Trait Implications:</strong>
+Moderate synaptic function characteristics.</p>
+<p><strong>Scientific Detail:</strong>
+Balanced neurotransmitter release dynamics.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- COMT (rs4680): Your GG genotype</p>
+<p><strong>Key References:</strong> Gosso et al. 2006</p>
+<hr />
+<h4 id="chrm2-muscarinic-acetylcholine-receptor-m2">CHRM2 — Muscarinic Acetylcholine Receptor M2</h4>
+<p><strong>SNP ID:</strong> rs2760118
+<strong>Location:</strong> Chromosome 6, Position 24503590
+<strong>Your Genotype:</strong> TT</p>
+<p><strong>Function:</strong> Cholinergic receptor involved in cognition</p>
+<p><strong>Your Variant Effect:</strong> Altered receptor function</p>
+<p><strong>Trait Implications:</strong>
+Has been associated with IQ and cognitive performance differences.</p>
+<p><strong>Scientific Detail:</strong>
+Modified cholinergic neurotransmission affecting cognition.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- SNAP25 (rs363050): Your AG genotype</p>
+<p><strong>Key References:</strong> Gosso et al. 2006</p>
+<hr />
+<h4 id="wwc1kibra-kidney-and-brain-expressed-protein">WWC1/KIBRA — Kidney and Brain Expressed Protein</h4>
+<p><strong>SNP ID:</strong> rs17070145
+<strong>Location:</strong> Chromosome 5, Position 167845791
+<strong>Your Genotype:</strong> CC</p>
+<p><strong>Function:</strong> Involved in memory consolidation</p>
+<p><strong>Your Variant Effect:</strong> Lower memory performance</p>
+<p><strong>Trait Implications:</strong>
+Slightly reduced episodic memory capacity.</p>
+<p><strong>Scientific Detail:</strong>
+This variant is associated with less efficient memory consolidation.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- BDNF (rs6265): Your CC genotype</p>
+<p><strong>Key References:</strong> Papassotiropoulos et al. 2006 Science</p>
+<hr />
+<h2 id="impulsivity">Impulsivity</h2>
+<p><em>Risk-taking and novelty seeking</em></p>
+<h3 id="your-variants-in-this-category_8">Your Variants in This Category</h3>
+<h4 id="lep-leptin">LEP — Leptin</h4>
+<p><strong>SNP ID:</strong> rs7799039
+<strong>Location:</strong> Chromosome 7, Position 127878783
+<strong>Your Genotype:</strong> AA</p>
+<p><strong>Function:</strong> Satiety hormone affecting reward</p>
+<p><strong>Your Variant Effect:</strong> Lower leptin levels</p>
+<p><strong>Trait Implications:</strong>
+May have different reward sensitivity, potential impulsivity differences.</p>
+<p><strong>Scientific Detail:</strong>
+Leptin interacts with dopamine reward circuits.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- DRD2/ANKK1 (rs1800497): Your GG genotype</p>
+<p><strong>Key References:</strong> Kiefer et al. 2005</p>
+<hr />
+<h2 id="social-cognition">Social Cognition</h2>
+<p><em>Understanding and relating to others</em></p>
+<h3 id="your-variants-in-this-category_9">Your Variants in This Category</h3>
+<h4 id="htr2a-serotonin-receptor-2a-promoter">HTR2A — Serotonin Receptor 2A Promoter</h4>
+<p><strong>SNP ID:</strong> rs6313
+<strong>Location:</strong> Chromosome 13, Position 47469940
+<strong>Your Genotype:</strong> AG</p>
+<p><strong>Function:</strong> Affects 5-HT2A receptor expression</p>
+<p><strong>Your Variant Effect:</strong> Novel/Rare genotype: AG</p>
+<p><strong>Trait Implications:</strong>
+This genotype is not well characterized in the literature.</p>
+<p><strong>Scientific Detail:</strong>
+The observed genotype differs from common variants. This may represent a rare variant or population-specific polymorphism.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- OXTR (rs53576): Your GG genotype
+- HTR2A (rs6311): Your CT genotype</p>
+<p><strong>Key References:</strong> Spurlock et al. 1998</p>
+<hr />
+<h2 id="addiction">Addiction</h2>
+<p><em>Substance use susceptibility</em></p>
+<h3 id="your-variants-in-this-category_10">Your Variants in This Category</h3>
+<h4 id="chrna5-cholinergic-receptor-nicotinic-alpha-5">CHRNA5 — Cholinergic Receptor Nicotinic Alpha 5</h4>
+<p><strong>SNP ID:</strong> rs16969968
+<strong>Location:</strong> Chromosome 15, Position 78882925
+<strong>Your Genotype:</strong> GG</p>
+<p><strong>Function:</strong> Nicotinic receptor affecting addiction</p>
+<p><strong>Your Variant Effect:</strong> Lower risk variant</p>
+<p><strong>Trait Implications:</strong>
+Lower nicotine dependence susceptibility.</p>
+<p><strong>Scientific Detail:</strong>
+Normal receptor function with typical response to nicotine.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- DRD2/ANKK1 (rs1800497): Your GG genotype</p>
+<p><strong>Key References:</strong> Thorgeirsson et al. 2008 Nature</p>
+<hr />
+<h4 id="adh1b-alcohol-dehydrogenase-1b">ADH1B — Alcohol Dehydrogenase 1B</h4>
+<p><strong>SNP ID:</strong> rs1229984
+<strong>Location:</strong> Chromosome 4, Position 100239319
+<strong>Your Genotype:</strong> CC</p>
+<p><strong>Function:</strong> Primary alcohol metabolism enzyme</p>
+<p><strong>Your Variant Effect:</strong> Fast metabolizer (His variant)</p>
+<p><strong>Trait Implications:</strong>
+Rapid alcohol metabolism leads to acetaldehyde accumulation, causing flushing and discomfort. Strong protection against alcohol dependence.</p>
+<p><strong>Scientific Detail:</strong>
+The His variant metabolizes alcohol 40x faster, creating unpleasant effects that discourage heavy drinking.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- DRD2/ANKK1 (rs1800497): Your GG genotype
+- ALDH2 (rs671): Your GG genotype</p>
+<p><strong>Key References:</strong> Li et al. 2012 PLoS Med</p>
+<hr />
+<h4 id="aldh2-aldehyde-dehydrogenase-2">ALDH2 — Aldehyde Dehydrogenase 2</h4>
+<p><strong>SNP ID:</strong> rs671
+<strong>Location:</strong> Chromosome 12, Position 112241766
+<strong>Your Genotype:</strong> GG</p>
+<p><strong>Function:</strong> Acetaldehyde metabolism</p>
+<p><strong>Your Variant Effect:</strong> Normal enzyme (ALDH2<em>1/</em>1)</p>
+<p><strong>Trait Implications:</strong>
+Standard alcohol metabolism without flushing. Typical risk for alcohol-related problems.</p>
+<p><strong>Scientific Detail:</strong>
+Full enzyme activity efficiently clears acetaldehyde.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- ADH1B (rs1229984): Your CC genotype</p>
+<p><strong>Key References:</strong> Chen et al. 1999 Am J Hum Genet</p>
+<hr />
+<h2 id="creativity">Creativity</h2>
+<p><em>Divergent thinking and openness</em></p>
+<h3 id="your-variants-in-this-category_11">Your Variants in This Category</h3>
+<h4 id="comt-comt-synonymous-variant">COMT — COMT Synonymous Variant</h4>
+<p><strong>SNP ID:</strong> rs4633
+<strong>Location:</strong> Chromosome 22, Position 19950235
+<strong>Your Genotype:</strong> CC</p>
+<p><strong>Function:</strong> Linked to COMT activity haplotype</p>
+<p><strong>Your Variant Effect:</strong> High activity haplotype marker</p>
+<p><strong>Trait Implications:</strong>
+Linked to faster dopamine clearance pattern.</p>
+<p><strong>Scientific Detail:</strong>
+Part of COMT haplotype affecting prefrontal dopamine.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- COMT (rs4680): Your GG genotype</p>
+<p><strong>Key References:</strong> Meyer-Lindenberg &amp; Weinberger 2006</p>
+<hr />
+<h4 id="disc1-disrupted-in-schizophrenia-1">DISC1 — Disrupted in Schizophrenia 1</h4>
+<p><strong>SNP ID:</strong> rs4307059
+<strong>Location:</strong> Chromosome 5, Position 25967703
+<strong>Your Genotype:</strong> CT</p>
+<p><strong>Function:</strong> Neurodevelopment and synaptic function</p>
+<p><strong>Your Variant Effect:</strong> Intermediate</p>
+<p><strong>Trait Implications:</strong>
+Moderate effects on cognition.</p>
+<p><strong>Scientific Detail:</strong>
+Partial variant effect.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- COMT (rs4680): Your GG genotype
+- BDNF (rs6265): Your CC genotype</p>
+<p><strong>Key References:</strong> Kéri 2009 Psychol Sci</p>
+<hr />
+<h2 id="conscientiousness">Conscientiousness</h2>
+<p><em>Organization and persistence</em></p>
+<h3 id="your-variants-in-this-category_12">Your Variants in This Category</h3>
+<h4 id="drd2-drd2-promoter">DRD2 — DRD2 Promoter</h4>
+<p><strong>SNP ID:</strong> rs4648317
+<strong>Location:</strong> Chromosome 11, Position 113331532
+<strong>Your Genotype:</strong> AG</p>
+<p><strong>Function:</strong> D2 receptor expression regulation</p>
+<p><strong>Your Variant Effect:</strong> Intermediate</p>
+<p><strong>Trait Implications:</strong>
+Moderate effect on receptor expression.</p>
+<p><strong>Scientific Detail:</strong>
+Heterozygous influence on transcription.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- DRD2/ANKK1 (rs1800497): Your GG genotype</p>
+<p><strong>Key References:</strong> Zhang et al. 2007</p>
+<hr />
+<h2 id="neuroticism">Neuroticism</h2>
+<p><em>Negative emotionality and worry</em></p>
+<h3 id="your-variants-in-this-category_13">Your Variants in This Category</h3>
+<h4 id="slc6a4-serotonin-transporter-3utr">SLC6A4 — Serotonin Transporter 3'UTR</h4>
+<p><strong>SNP ID:</strong> rs3813034
+<strong>Location:</strong> Chromosome 17, Position 28524804
+<strong>Your Genotype:</strong> AA</p>
+<p><strong>Function:</strong> Affects transporter mRNA stability</p>
+<p><strong>Your Variant Effect:</strong> Novel/Rare genotype: AA</p>
+<p><strong>Trait Implications:</strong>
+This genotype is not well characterized in the literature.</p>
+<p><strong>Scientific Detail:</strong>
+The observed genotype differs from common variants. This may represent a rare variant or population-specific polymorphism.</p>
+<p><strong>Key References:</strong> Battersby et al. 1999</p>
+<hr />
+<h2 id="resilience">Resilience</h2>
+<p><em>Stress recovery and positive adaptation</em></p>
+<h3 id="your-variants-in-this-category_14">Your Variants in This Category</h3>
+<h4 id="akt1-protein-kinase-b">AKT1 — Protein Kinase B</h4>
+<p><strong>SNP ID:</strong> rs322931
+<strong>Location:</strong> Chromosome 1, Position 199019855
+<strong>Your Genotype:</strong> AG</p>
+<p><strong>Function:</strong> Survival signaling and neuroplasticity</p>
+<p><strong>Your Variant Effect:</strong> Novel/Rare genotype: AG</p>
+<p><strong>Trait Implications:</strong>
+This genotype is not well characterized in the literature.</p>
+<p><strong>Scientific Detail:</strong>
+The observed genotype differs from common variants. This may represent a rare variant or population-specific polymorphism.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- BDNF (rs6265): Your CC genotype
+- COMT (rs4680): Your GG genotype</p>
+<p><strong>Key References:</strong> van Winkel et al. 2011</p>
+<hr />
+<h4 id="comt-comt-3utr">COMT — COMT 3'UTR</h4>
+<p><strong>SNP ID:</strong> rs165599
+<strong>Location:</strong> Chromosome 22, Position 19956781
+<strong>Your Genotype:</strong> AG</p>
+<p><strong>Function:</strong> COMT expression regulation</p>
+<p><strong>Your Variant Effect:</strong> Intermediate</p>
+<p><strong>Trait Implications:</strong>
+Balanced COMT expression.</p>
+<p><strong>Scientific Detail:</strong>
+Moderate effect on enzyme levels.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- COMT (rs4680): Your GG genotype</p>
+<p><strong>Key References:</strong> Meyer-Lindenberg et al. 2006</p>
+<hr />
+<h2 id="pain">Pain</h2>
+<p><em>Sensory processing and pain sensitivity</em></p>
+<h3 id="your-variants-in-this-category_15">Your Variants in This Category</h3>
+<h4 id="oprm1-mu-opioid-receptor-a118g">OPRM1 — Mu-Opioid Receptor A118G</h4>
+<p><strong>SNP ID:</strong> rs1799971
+<strong>Location:</strong> Chromosome 6, Position 154360797
+<strong>Your Genotype:</strong> AA</p>
+<p><strong>Function:</strong> Primary endorphin/pain receptor</p>
+<p><strong>Your Variant Effect:</strong> Standard receptor function (Asn/Asn)</p>
+<p><strong>Trait Implications:</strong>
+Normal pain sensitivity, standard endorphin reward response, typical social bonding through opioid system.</p>
+<p><strong>Scientific Detail:</strong>
+Normal mu-opioid receptor binding affinity and signaling.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- OXTR (rs53576): Your GG genotype</p>
+<p><strong>Key References:</strong> Way et al. 2009 Mol Psychiatry, Fillingim et al. 2005</p>
+<hr />
+<h2 id="longevity">Longevity</h2>
+<p><em>Cognitive aging and lifespan factors</em></p>
+<h3 id="your-variants-in-this-category_16">Your Variants in This Category</h3>
+<h4 id="apoe-apolipoprotein-e-defines-e4">APOE — Apolipoprotein E (defines E4)</h4>
+<p><strong>SNP ID:</strong> rs429358
+<strong>Location:</strong> Chromosome 19, Position 45411941
+<strong>Your Genotype:</strong> TT</p>
+<p><strong>Function:</strong> Lipid transport, brain health</p>
+<p><strong>Your Variant Effect:</strong> E4/E4 indicator</p>
+<p><strong>Trait Implications:</strong>
+Highest risk for age-related cognitive decline.</p>
+<p><strong>Scientific Detail:</strong>
+Homozygous for E4-associated variant.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- APOE (rs7412): Your CC genotype</p>
+<p><strong>Key References:</strong> Corder et al. 1993 Science</p>
+<hr />
+<h4 id="apoe-apolipoprotein-e-defines-e2">APOE — Apolipoprotein E (defines E2)</h4>
+<p><strong>SNP ID:</strong> rs7412
+<strong>Location:</strong> Chromosome 19, Position 45412079
+<strong>Your Genotype:</strong> CC</p>
+<p><strong>Function:</strong> Additional APOE variant defining E2 allele</p>
+<p><strong>Your Variant Effect:</strong> Not E2</p>
+<p><strong>Trait Implications:</strong>
+Standard APOE allele (E3 or E4 depending on rs429358).</p>
+<p><strong>Scientific Detail:</strong>
+E3/E3 is most common and associated with average longevity.</p>
+<p><strong>Interactions with Other Genes:</strong>
+- APOE (rs429358): Your TT genotype</p>
+<p><strong>Key References:</strong> Schächter et al. 1994</p>
+<hr />
+<h2 id="gene-interactions-emergent-traits">Gene Interactions &amp; Emergent Traits</h2>
+<h3 id="the-whole-is-greater-than-the-sum-of-its-parts">The Whole Is Greater Than the Sum of Its Parts</h3>
+<p>Individual gene variants tell only part of the story. Personality traits emerge from
+the interaction of multiple genes working together as systems. This chapter examines
+how your specific combination of variants creates emergent patterns not predictable
+from any single gene alone.</p>
+<h3 id="stress-response-integration">Stress Response Integration</h3>
+<p><strong>Interaction Coverage:</strong> 80% of key genes available</p>
+<p><strong>Your Relevant Variants:</strong></p>
+<ul>
+<li><strong>COMT</strong> (rs4680): GG — Val/Val - High COMT activity (Warrior)</li>
+<li><strong>BDNF</strong> (rs6265): CC — Novel/Rare genotype: CC</li>
+<li><strong>CRHR1</strong> (rs110402): GG — Standard stress response</li>
+<li><strong>FKBP5</strong> (rs1360780): CT — Intermediate expression</li>
+</ul>
+<p><strong>Analysis:</strong></p>
+<pre><code>    The interaction between serotonin transporter (5-HTTLPR/rs25531), COMT (rs4680), BDNF (rs6265),
+    and HPA axis genes (CRHR1, FKBP5) creates a complex stress response phenotype.
+
+    Low-expression 5-HTTLPR + Met/Met COMT + Met/Met BDNF creates maximal stress sensitivity
+    with deep emotional processing but vulnerability to chronic stress. This combination often
+    appears in highly creative individuals who process emotions intensely.
+
+    Conversely, high-expression 5-HTTLPR + Val/Val COMT + Val/Val BDNF creates a resilient,
+    action-oriented phenotype that performs well under pressure but may miss subtle emotional cues.
+
+    The CRHR1 and FKBP5 variants modify this foundation - protective CRHR1 variants can buffer
+    an otherwise stress-sensitive genotype, while FKBP5 risk variants can compromise even
+    a relatively resilient baseline.
+</code></pre>
+<p><strong>Your Specific Pattern:</strong></p>
+<p>Your intermediate pattern provides a balanced stress-sensitivity profile. You have
+access to both deep emotional processing and practical stress tolerance, depending
+on the situation. This flexibility is an asset, though you may need to consciously
+choose which mode to engage depending on circumstances.</p>
+<hr />
+<h3 id="reward-system-integration">Reward System Integration</h3>
+<p><strong>Interaction Coverage:</strong> 60% of key genes available</p>
+<p><strong>Your Relevant Variants:</strong></p>
+<ul>
+<li><strong>COMT</strong> (rs4680): GG — Val/Val - High COMT activity (Warrior)</li>
+<li><strong>DRD2/ANKK1</strong> (rs1800497): GG — Novel/Rare genotype: GG</li>
+<li><strong>DRD3</strong> (rs6280): CC — Ser/Ser - Standard receptor function</li>
+</ul>
+<p><strong>Analysis:</strong></p>
+<pre><code>    The dopamine system genes interact to create reward sensitivity and motivation profiles.
+
+    Low COMT activity (Met/Met) + reduced D2 receptors (A1 carriers at rs1800497) + reduced D4
+    expression (TT at rs1800955) creates a profile of high cognitive focus but potentially
+    addictive reward-seeking behavior. These individuals may be driven, creative, but vulnerable
+    to becoming over-focused on specific rewards.
+
+    High COMT activity (Val/Val) + normal D2 (A2/A2) + normal D4 creates balanced reward
+    processing with good stress tolerance but potentially lower intrinsic motivation for
+    cognitive tasks.
+
+    MAO-A activity (rs6323) modulates this system - low MAO-A increases emotional intensity
+    and can amplify both reward highs and frustration lows.
+</code></pre>
+<p><strong>Your Specific Pattern:</strong></p>
+<hr />
+<h3 id="social-attachment-system">Social Attachment System</h3>
+<p><strong>Interaction Coverage:</strong> 60% of key genes available</p>
+<p><strong>Your Relevant Variants:</strong></p>
+<ul>
+<li><strong>OXTR</strong> (rs53576): GG — Higher receptor expression</li>
+<li><strong>OXTR</strong> (rs2254298): GG — Standard expression</li>
+<li><strong>OPRM1</strong> (rs1799971): AA — Standard receptor function (Asn/Asn)</li>
+</ul>
+<p><strong>Analysis:</strong></p>
+<pre><code>    The oxytocin-opioid social bonding network creates distinct attachment styles.
+
+    GG genotype at OXTR (rs53576) + normal CD38 (rs3796863 CC) + standard mu-opioid receptor
+    (rs1799971 AA) creates high social reward sensitivity, strong empathy, and deep need for
+    social connection. These individuals thrive in supportive social environments but may
+    be more affected by rejection.
+
+    AA genotype at OXTR + reduced opioid function (rs1799971 GG) may create a more
+    self-reliant personality that is less dependent on social validation but may also
+    have to work harder to maintain close relationships.
+
+    The vasopressin receptor (rs2228485) particularly influences pair bonding and can
+    modify overall social attachment patterns.
+</code></pre>
+<p><strong>Your Specific Pattern:</strong></p>
+<p>Your GG oxytocin receptor genotype places you high on social orientation. You likely
+find social connection deeply rewarding, experience empathy strongly, and are attuned
+to others' emotional states. Social support is especially important for your wellbeing.</p>
+<hr />
+<h3 id="cognitive-processing-pattern">Cognitive Processing Pattern</h3>
+<p><strong>Interaction Coverage:</strong> 100% of key genes available</p>
+<p><strong>Your Relevant Variants:</strong></p>
+<ul>
+<li><strong>COMT</strong> (rs4680): GG — Val/Val - High COMT activity (Warrior)</li>
+<li><strong>BDNF</strong> (rs6265): CC — Novel/Rare genotype: CC</li>
+<li><strong>WWC1/KIBRA</strong> (rs17070145): CC — Lower memory performance</li>
+<li><strong>SNAP25</strong> (rs363050): AG — Intermediate</li>
+<li><strong>CHRM2</strong> (rs2760118): TT — Altered receptor function</li>
+</ul>
+<p><strong>Analysis:</strong></p>
+<pre><code>    Cognitive style emerges from the interaction of prefrontal dopamine (COMT),
+    neuroplasticity (BDNF), and memory consolidation (KIBRA) genes.
+
+    Met/Met COMT + Val/Val BDNF + TT KIBRA (rs17070145) creates an optimal cognitive
+    profile with high working memory, excellent episodic memory, and strong learning
+    capacity. However, this combination may show performance decrements under high stress.
+
+    Val/Val COMT + Met/Met BDNF creates a different pattern - better stress performance
+    but potentially reduced baseline cognitive flexibility and memory consolidation.
+    These individuals may excel at procedural learning and habit formation.
+
+    SNAP25 (rs363050) and CHRM2 (rs2760118) variants can further modify general cognitive
+    ability, affecting attention and processing speed.
+</code></pre>
+<p><strong>Your Specific Pattern:</strong></p>
+<hr />
+<h3 id="baseline-emotional-tone">Baseline Emotional Tone</h3>
+<p><strong>Interaction Coverage:</strong> 60% of key genes available</p>
+<p><strong>Your Relevant Variants:</strong></p>
+<ul>
+<li><strong>HTR1A</strong> (rs6295): CC — Reduced receptor expression</li>
+<li><strong>HTR2A</strong> (rs6311): CT — Novel/Rare genotype: CT</li>
+<li><strong>TPH2</strong> (rs4570625): GG — Standard brain serotonin synthesis</li>
+</ul>
+<p><strong>Analysis:</strong></p>
+<pre><code>    Emotional temperament emerges from serotonin receptor balance, synthesis capacity,
+    and GABAergic inhibition.
+
+    Low 5-HT1A (rs6295 CC) + high 5-HT2A (rs6311 GG) + reduced TPH2 (rs4570625 TT)
+    creates high emotional intensity - vivid emotions, strong aesthetic responses,
+    but potential anxiety vulnerability.
+
+    High 5-HT1A (rs6295 GG) + low 5-HT2A (rs6311 AA) + normal TPH2 creates a calmer,
+    more emotionally stable temperament with lower anxiety but potentially reduced
+    emotional richness.
+
+    GABA receptor variants (rs211014) provide the inhibitory foundation that can
+    buffer or amplify these serotonergic patterns. MAO-A activity (rs6323) affects
+    how quickly emotional responses resolve.
+</code></pre>
+<p><strong>Your Specific Pattern:</strong></p>
+<hr />
+<h3 id="creative-potential">Creative Potential</h3>
+<p><strong>Interaction Coverage:</strong> 60% of key genes available</p>
+<p><strong>Your Relevant Variants:</strong></p>
+<ul>
+<li><strong>COMT</strong> (rs4680): GG — Val/Val - High COMT activity (Warrior)</li>
+<li><strong>BDNF</strong> (rs6265): CC — Novel/Rare genotype: CC</li>
+<li><strong>DISC1</strong> (rs4307059): CT — Intermediate</li>
+</ul>
+<p><strong>Analysis:</strong></p>
+<pre><code>    Creative cognition involves a specific pattern of dopamine-BDNF interaction.
+
+    The optimal 'creative genotype' often includes: Met/Met or Val/Met COMT (higher
+    prefrontal dopamine), Val/Met or Val/Val BDNF (balanced plasticity), DRD4 variants
+    associated with novelty seeking, and moderate MAO-A activity.
+
+    This combination allows for divergent thinking (dopamine-enhanced prefrontal activity),
+    cognitive flexibility (BDNF-mediated plasticity), novelty seeking (D4 receptor effects),
+    and emotional intensity that fuels creative drive (moderate MAO-A).
+
+    DISC1 variants (rs4307059) have been specifically linked to enhanced divergent thinking
+    and creative achievement in multiple studies.
+</code></pre>
+<p><strong>Your Specific Pattern:</strong></p>
+<hr />
+<h3 id="adversity-response">Adversity Response</h3>
+<p><strong>Interaction Coverage:</strong> 60% of key genes available</p>
+<p><strong>Your Relevant Variants:</strong></p>
+<ul>
+<li><strong>CRHR1</strong> (rs110402): GG — Standard stress response</li>
+<li><strong>FKBP5</strong> (rs1360780): CT — Intermediate expression</li>
+<li><strong>BDNF</strong> (rs6265): CC — Novel/Rare genotype: CC</li>
+</ul>
+<p><strong>Analysis:</strong></p>
+<pre><code>    Resilience to life adversity depends on HPA axis genetics interacting with neuroplasticity.
+
+    Protective CRHR1 variants (rs110402 AA, rs242924 GG) + low-risk FKBP5 (rs1360780 CC) +
+    Val/Val BDNF creates a resilient phenotype that recovers well from stress and shows
+    effective fear extinction.
+
+    Risk variants across these genes can create compound vulnerability - the individual
+    may be strongly affected by early adversity, with effects that persist. However,
+    this same sensitivity can lead to exceptional growth in supportive environments
+    (differential susceptibility).
+
+    The glucocorticoid receptor (rs41423247) modulates how cortisol affects the brain -
+    high sensitivity variants amplify both the negative effects of chronic stress and
+    the positive effects of nurturing environments.
+</code></pre>
+<p><strong>Your Specific Pattern:</strong></p>
+<hr />
+<h3 id="daily-rhythm-and-energy-patterns">Daily Rhythm And Energy Patterns</h3>
+<p><strong>Interaction Coverage:</strong> 67% of key genes available</p>
+<p><strong>Your Relevant Variants:</strong></p>
+<ul>
+<li><strong>CLOCK</strong> (rs1801260): AG — Intermediate</li>
+<li><strong>CLOCK</strong> (rs12649507): GG — Alternative chronotype pattern</li>
+</ul>
+<p><strong>Analysis:</strong></p>
+<pre><code>    Circadian genes determine not just sleep timing but daily energy distribution
+    and optimal performance windows.
+
+    Evening-type variants (rs1801260 GG) create individuals who naturally peak later
+    in the day, may struggle with early morning demands, but show enhanced creativity
+    and problem-solving in evening hours.
+
+    Morning-type variants support early rising, morning productivity, but earlier
+    evening fatigue. These individuals may be perceived as more conscientious simply
+    due to alignment with conventional schedules.
+
+    PER2 variants (rs57875989) can shift the entire circadian phase, sometimes
+    dramatically. Combined with CLOCK variants, this creates the full spectrum
+    from extreme larks to extreme owls.
+</code></pre>
+<p><strong>Your Specific Pattern:</strong></p>
+<hr />
+<h2 id="complete-variant-reference">Complete Variant Reference</h2>
+<p>The following table provides a complete reference of all analyzed variants.</p>
+<table>
+<thead>
+<tr>
+<th>Gene</th>
+<th>SNP</th>
+<th>Chr</th>
+<th>Position</th>
+<th>Genotype</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AKT1</td>
+<td>rs322931</td>
+<td>1</td>
+<td>199019855</td>
+<td>AG</td>
+<td>Novel/Rare genotype: AG</td>
+</tr>
+<tr>
+<td>TPH1</td>
+<td>rs1800532</td>
+<td>11</td>
+<td>18047816</td>
+<td>GT</td>
+<td>Novel/Rare genotype: GT</td>
+</tr>
+<tr>
+<td>BDNF</td>
+<td>rs7124442</td>
+<td>11</td>
+<td>27677041</td>
+<td>CT</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>BDNF</td>
+<td>rs6265</td>
+<td>11</td>
+<td>27679916</td>
+<td>CC</td>
+<td>Novel/Rare genotype: CC</td>
+</tr>
+<tr>
+<td>BDNF</td>
+<td>rs11030104</td>
+<td>11</td>
+<td>27684517</td>
+<td>AA</td>
+<td>One variant state</td>
+</tr>
+<tr>
+<td>DRD2/ANKK1</td>
+<td>rs1800497</td>
+<td>11</td>
+<td>113270828</td>
+<td>GG</td>
+<td>Novel/Rare genotype: GG</td>
+</tr>
+<tr>
+<td>DRD2</td>
+<td>rs2283265</td>
+<td>11</td>
+<td>113285536</td>
+<td>CC</td>
+<td>Novel/Rare genotype: CC</td>
+</tr>
+<tr>
+<td>DRD2</td>
+<td>rs1079597</td>
+<td>11</td>
+<td>113296286</td>
+<td>CC</td>
+<td>B1/B1 - Reduced D2 density</td>
+</tr>
+<tr>
+<td>DRD2</td>
+<td>rs4648317</td>
+<td>11</td>
+<td>113331532</td>
+<td>AG</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>TPH2</td>
+<td>rs4570625</td>
+<td>12</td>
+<td>72331923</td>
+<td>GG</td>
+<td>Standard brain serotonin synthesis</td>
+</tr>
+<tr>
+<td>ALDH2</td>
+<td>rs671</td>
+<td>12</td>
+<td>112241766</td>
+<td>GG</td>
+<td>Normal enzyme (ALDH2<em>1/</em>1)</td>
+</tr>
+<tr>
+<td>HTR2A</td>
+<td>rs6313</td>
+<td>13</td>
+<td>47469940</td>
+<td>AG</td>
+<td>Novel/Rare genotype: AG</td>
+</tr>
+<tr>
+<td>HTR2A</td>
+<td>rs6311</td>
+<td>13</td>
+<td>47471478</td>
+<td>CT</td>
+<td>Novel/Rare genotype: CT</td>
+</tr>
+<tr>
+<td>CHRNA5</td>
+<td>rs16969968</td>
+<td>15</td>
+<td>78882925</td>
+<td>GG</td>
+<td>Lower risk variant</td>
+</tr>
+<tr>
+<td>SLC6A4</td>
+<td>rs3813034</td>
+<td>17</td>
+<td>28524804</td>
+<td>AA</td>
+<td>Novel/Rare genotype: AA</td>
+</tr>
+<tr>
+<td>CRHR1</td>
+<td>rs110402</td>
+<td>17</td>
+<td>43880047</td>
+<td>GG</td>
+<td>Standard stress response</td>
+</tr>
+<tr>
+<td>APOE</td>
+<td>rs429358</td>
+<td>19</td>
+<td>45411941</td>
+<td>TT</td>
+<td>E4/E4 indicator</td>
+</tr>
+<tr>
+<td>APOE</td>
+<td>rs7412</td>
+<td>19</td>
+<td>45412079</td>
+<td>CC</td>
+<td>Not E2</td>
+</tr>
+<tr>
+<td>SNAP25</td>
+<td>rs363050</td>
+<td>20</td>
+<td>10234257</td>
+<td>AG</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>COMT</td>
+<td>rs4633</td>
+<td>22</td>
+<td>19950235</td>
+<td>CC</td>
+<td>High activity haplotype marker</td>
+</tr>
+<tr>
+<td>COMT</td>
+<td>rs4680</td>
+<td>22</td>
+<td>19951271</td>
+<td>GG</td>
+<td>Val/Val - High COMT activity (Warrior)</td>
+</tr>
+<tr>
+<td>COMT</td>
+<td>rs165599</td>
+<td>22</td>
+<td>19956781</td>
+<td>AG</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>OXTR</td>
+<td>rs2254298</td>
+<td>3</td>
+<td>8802228</td>
+<td>GG</td>
+<td>Standard expression</td>
+</tr>
+<tr>
+<td>OXTR</td>
+<td>rs53576</td>
+<td>3</td>
+<td>8804371</td>
+<td>GG</td>
+<td>Higher receptor expression</td>
+</tr>
+<tr>
+<td>DRD3</td>
+<td>rs6280</td>
+<td>3</td>
+<td>113890815</td>
+<td>CC</td>
+<td>Ser/Ser - Standard receptor function</td>
+</tr>
+<tr>
+<td>GABRA2</td>
+<td>rs279858</td>
+<td>4</td>
+<td>46314593</td>
+<td>CT</td>
+<td>Novel/Rare genotype: CT</td>
+</tr>
+<tr>
+<td>CLOCK</td>
+<td>rs1801260</td>
+<td>4</td>
+<td>56301369</td>
+<td>AG</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>CLOCK</td>
+<td>rs12649507</td>
+<td>4</td>
+<td>56380484</td>
+<td>GG</td>
+<td>Alternative chronotype pattern</td>
+</tr>
+<tr>
+<td>ADH1B</td>
+<td>rs1229984</td>
+<td>4</td>
+<td>100239319</td>
+<td>CC</td>
+<td>Fast metabolizer (His variant)</td>
+</tr>
+<tr>
+<td>NR3C2</td>
+<td>rs5522</td>
+<td>4</td>
+<td>149357475</td>
+<td>TT</td>
+<td>Novel/Rare genotype: TT</td>
+</tr>
+<tr>
+<td>DISC1</td>
+<td>rs4307059</td>
+<td>5</td>
+<td>25967703</td>
+<td>CT</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>HTR1A</td>
+<td>rs6295</td>
+<td>5</td>
+<td>63258565</td>
+<td>CC</td>
+<td>Reduced receptor expression</td>
+</tr>
+<tr>
+<td>WWC1/KIBRA</td>
+<td>rs17070145</td>
+<td>5</td>
+<td>167845791</td>
+<td>CC</td>
+<td>Lower memory performance</td>
+</tr>
+<tr>
+<td>CHRM2</td>
+<td>rs2760118</td>
+<td>6</td>
+<td>24503590</td>
+<td>TT</td>
+<td>Altered receptor function</td>
+</tr>
+<tr>
+<td>FKBP5</td>
+<td>rs1360780</td>
+<td>6</td>
+<td>35607571</td>
+<td>CT</td>
+<td>Intermediate expression</td>
+</tr>
+<tr>
+<td>OPRM1</td>
+<td>rs1799971</td>
+<td>6</td>
+<td>154360797</td>
+<td>AA</td>
+<td>Standard receptor function (Asn/Asn)</td>
+</tr>
+<tr>
+<td>LEP</td>
+<td>rs7799039</td>
+<td>7</td>
+<td>127878783</td>
+<td>AA</td>
+<td>Lower leptin levels</td>
+</tr>
+<tr>
+<td>DBH</td>
+<td>rs1611115</td>
+<td>9</td>
+<td>136500515</td>
+<td>CT</td>
+<td>Intermediate activity</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="scientific-references">Scientific References</h2>
+<p>The analysis in this book is based on the following peer-reviewed scientific literature:</p>
+<ul>
+<li>Battersby et al. 1999</li>
+<li>Binder et al. 2008 JAMA</li>
+<li>Blum et al. 1990</li>
+<li>Bradley et al. 2008 Arch Gen Psychiatry</li>
+<li>Chen et al. 1999 Am J Hum Genet</li>
+<li>Chen et al. 2004 Am J Hum Genet</li>
+<li>Chen et al. 2008</li>
+<li>Corder et al. 1993 Science</li>
+<li>Covault et al. 2004</li>
+<li>DeRijk et al. 2006</li>
+<li>Egan et al. 2001 PNAS</li>
+<li>Egan et al. 2003 Cell</li>
+<li>Fillingim et al. 2005</li>
+<li>Gosso et al. 2006</li>
+<li>Hariri et al. 2003 J Neurosci</li>
+<li>Jones et al. 2019 Nature Comms</li>
+<li>Joyce et al. 2009</li>
+<li>Katzenberg et al. 1998</li>
+<li>Kiefer et al. 2005</li>
+<li>Kéri 2009 Psychol Sci</li>
+<li>Lemonde et al. 2003 J Neurosci</li>
+<li>Li et al. 2012 PLoS Med</li>
+<li>Lundstrom &amp; Bhardwaj 2001</li>
+<li>Meyer-Lindenberg &amp; Weinberger 2006</li>
+<li>Meyer-Lindenberg et al. 2006</li>
+<li>Nielsen et al. 1994</li>
+<li>Noble et al. 1991 Arch Gen Psychiatry</li>
+<li>Noble et al. 1994</li>
+<li>Papassotiropoulos et al. 2006 Science</li>
+<li>Polesskaya &amp; Bhardwaj 2005</li>
+<li>Rodrigues et al. 2009 PNAS</li>
+<li>Rujescu et al. 2003</li>
+<li>Schächter et al. 1994</li>
+<li>Spurlock et al. 1998</li>
+<li>Strobel et al. 2003 Mol Psychiatry</li>
+<li>Thorgeirsson et al. 2008 Nature</li>
+<li>Tost et al. 2010 PNAS</li>
+<li>Turecki et al. 1999</li>
+<li>Verhagen et al. 2010</li>
+<li>Way et al. 2009 Mol Psychiatry</li>
+<li>Wu et al. 2012</li>
+<li>Zabetian et al. 2001</li>
+<li>Zhang et al. 2005 Neuron</li>
+<li>Zhang et al. 2007</li>
+<li>van Winkel et al. 2011</li>
+</ul>
+<hr />
+<h2 id="afterword">Afterword</h2>
+<p>This analysis represents a snapshot of current scientific understanding of personality genetics.
+The field continues to evolve rapidly, with new discoveries regularly refining our understanding
+of how genes influence who we become.</p>
+<p>Remember that you are not defined by your DNA. These variants create tendencies, not destinies.
+Your choices, experiences, relationships, and personal growth all shape your personality in
+ways that no genetic analysis can capture.</p>
+<p>Use this information as a tool for self-understanding, not as a limitation. Understanding your
+genetic tendencies can help you recognize your strengths, anticipate challenges, and make
+informed choices about how to live a life aligned with your authentic self.</p>
+<p><em>Analysis generated from: genome_Daniel_Taylor_v5_Full_20260225220601.txt</em></p>
+<hr />
+<p><em>DNA Analyzer — Comprehensive Genome Personality Analysis</em></p>
+    <script>
+        // Add smooth scroll for TOC links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
